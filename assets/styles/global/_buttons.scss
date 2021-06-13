@@ -1,0 +1,91 @@
+@import 'variables';
+
+/*
+ * Buttons.
+ */
+%btn-common {
+  padding: 11px 30px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  outline: 0;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  border: 1px solid transparent;
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background: url(/assets/images/right-arrow.svg);
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    margin-left: 10px;
+    transition: all .3s ease-in-out;
+  }
+  @include tablet-down {
+    font-size: 12px;
+    padding: 8px 20px;
+    min-width: auto;
+  }
+}
+
+.btn.btn-white {
+  @extend %btn-common;
+  background: $white;
+  color: $black;
+  &:hover {
+    background: $black;
+    color: $white;
+    &::after {
+      filter: invert(1);
+    }
+  }
+}
+
+.btn.btn-black {
+  @extend %btn-common;
+  background: $black;
+  color: $white;
+  // &:hover {
+  //   background: $white;
+  //   color: $black;
+  //   &::after {
+  //     filter: invert(1);
+  //   }
+  // }
+}
+
+.btn.btn-border-white {
+  @extend %btn-common;
+  background: none;
+  border: 1px solid $white;
+  color: $white;
+  &:hover {
+    background: $white;
+    color: $black;
+    &::after {
+      filter: invert(0);
+    }
+  }
+  &::after {
+    filter: invert(1);
+  }
+}
+
+.btn.btn-border-black {
+  @extend %btn-common;
+  background: none;
+  border: 1px solid $black;
+  color: $black;
+  &:hover {
+    background: $black;
+    color: $white;
+    &::after {
+      filter: invert(1);
+    }
+  }
+}
+

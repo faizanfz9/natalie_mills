@@ -1,0 +1,90 @@
+.product-slider {
+    .title {
+        @include nowrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .slider-wrap {
+        .slick-list {
+            overflow: visible;
+        }
+        .slide-item {
+            .product {
+                max-width: 350px;
+                padding: 20px;
+                border: 1px solid $light-gray;
+                position: relative;
+                .img-wrap {
+                    width: 100%; 
+                    height: 300px;
+                    position: relative;
+                    margin-bottom: 20px;
+                    &:hover {
+                        .hover-img {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .hover-img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                .choices {
+                    margin: 35px 0 20px;
+                    li {
+                        display: inline-block;
+                        margin-right: 5px;
+                        img {
+                            width: 24px;
+                        }
+                    }
+                }
+                .amount-row {
+                    @include nowrap;
+                    justify-content: space-between;
+                    h3 {
+                        font-family: $merriweather;
+                        font-size: 32px;
+                        span {
+                            font-family: $merriweather;
+                            font-size: 18px;
+                            color: $gray;
+                            text-decoration: line-through;
+                        }
+                    }
+                    .add-to-bag {
+                        font-size: 18px;
+                        color: $purple;
+                    }
+                }
+                .fav-btn {
+                    display: inline-block;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    &:hover {
+                        img {
+                            filter: invert(8%) sepia(73%) saturate(5972%) hue-rotate(
+                                283deg
+                                ) brightness(107%) contrast(109%);
+                        }
+                    }
+                    img {
+                        width: 50px;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

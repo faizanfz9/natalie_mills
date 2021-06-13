@@ -1,0 +1,42 @@
+.featured {
+    .title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .row-wrap {
+        @include row;
+        .col-wrap {
+            @include column(50%);
+            padding: 0 10px;
+            .card-wrap {
+                position: relative;
+                margin-bottom: 20px;
+                img {
+                    width: 100%;
+                }
+                .text-block {
+                    position: absolute;
+                    bottom: 4px;
+                    width: 100%;
+                    background: rgba(0, 0, 0, .5);
+                    padding: 27px;
+                    h2 {
+                        font-family: $merriweather;
+                        color: $white;
+                        margin-bottom: 10px;
+                        font-size: 34px;
+                        font-weight: 600;
+                    }
+                    a {
+                        margin-top: 10px;
+                    }
+                    p {
+                        max-width: 300px;
+                        color: $white;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

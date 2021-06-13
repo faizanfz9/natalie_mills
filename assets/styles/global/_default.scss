@@ -1,0 +1,205 @@
+@import "variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+// Global styling
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+html {
+  overflow-X: hidden;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    padding: 90px 0;
+    overflow: hidden;
+    @include phablet-down {
+      padding: 30px 0;
+    }
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    position: relative;
+}
+.inner-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1040px;
+  position: relative;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: $merriweather;
+    font-weight: bold;
+    color: $black;
+    line-height: 1.05;
+    @include container-down {
+      font-size: 40px;
+    }
+    @include desktop-down {
+      font-size: 36px;
+    }
+    @include tablet-down {
+      font-size: 30px;
+    }
+    @include phablet-down {
+      font-size: 26px;
+    }
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-family: $roboto;
+    font-weight: 400;
+    color: $black;
+    line-height: 1.12;
+    @include container-down {
+      font-size: 30px;
+    }
+    @include desktop-down {
+      font-size: 28px;
+    }
+    @include phablet-down {
+      font-size: 24px;
+    }
+  }
+  
+  h3 {
+    font-size: 28px;
+    font-family: $roboto;
+    font-weight: 600;
+    color: $text-black;
+  }
+  
+  h4 {
+    font-size: 22px;
+    font-family: $roboto;
+    font-weight: 400;
+    color: $black;
+    @include desktop-down {
+      font-size: 18px;
+    }
+    @include tablet-down {
+      font-size: 16px;
+    }
+  }
+  
+  h5 {
+    font-size: 20px;
+    font-family: $roboto;
+    font-weight: 500;
+    color: $black;
+    @include desktop-down {
+      font-size: 18px;
+    }
+    @include tablet-down {
+      font-size: 16px;
+    }
+  }
+  
+  h6 {
+    font-size: 18px;
+    font-family: $roboto;
+    font-weight: 400;
+    color: $black;
+    @include tablet-down {
+      font-size: 16px;
+    }
+  }
+  
+  p {
+    font-size: 18px;
+    font-family: $roboto;
+    line-height: 1.6;
+    color: $black;
+    @include tablet-down {
+      font-size: 14px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    li {
+      font-family: $roboto;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 14px;
+    color: $black;
+    @include tablet-down {
+      font-size: 14px;
+    }
+  }
+
+  input, label, textarea {
+    font-family: $roboto;
+  }
+
+  span {
+    font-family: $roboto;
+  }
+
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+.intro-wrap {
+  margin-bottom: 35px;
+  @include tablet-down {
+    margin-bottom: 25px;
+  }
+  h2 {
+      text-align: center;
+      span {
+          color: $orange;
+      }
+  }
+}
+
+  header:after,
+.container:after,
+.wrapper:after,
+.column-wrapper:after,
+.grid-wrapper:after,
+.two-third:after,
+.content-wrapper:after,
+.v-middle-wrapper:after,
+.col-wrapper:after {
+  content: "";
+  clear: both;
+  display: block;
+}

@@ -1,0 +1,29 @@
+.col-with-img-card {
+    background: $smoke-white;
+    .row-wrap {
+        @include row;
+        background: $white;
+        align-items: center;
+        .col-left {
+            @include column(35%);
+            padding: 0 40px;
+            h2 {
+                font-size: 68px;
+                font-weight: bold;
+            }
+            p {
+                color: $gray;
+                margin: 15px 0 40px;
+            }
+        }
+        .col-right {
+            @include column(65%);
+            .img-wrap {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

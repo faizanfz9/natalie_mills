@@ -1,0 +1,21 @@
+/* Globals */
+@import "global/default";
+@import "global/variables";
+@import "global/buttons";
+
+/* Plugins */
+@import "plugins/animate";
+@import "plugins/slick";
+
+/* Sections */
+@import "common/header";
+@import "sections/banner.scss";
+@import "sections/text-blade.scss";
+@import "sections/featured.scss";
+@import "sections/product-slider.scss";
+@import "sections/col-two-grid";
+@import "sections/col-with-img-card.scss";
+@import "sections/col-five-grid.scss";
+@import "common/footer";
+
+

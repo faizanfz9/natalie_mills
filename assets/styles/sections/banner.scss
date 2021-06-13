@@ -1,0 +1,76 @@
+.banner {
+    position: relative;
+    padding: 0;
+    .bg-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .content-block {
+        padding: 200px 0;
+        .container {
+            height: 100%;
+            .inner-wrap {
+                height: 100%;
+                @include row;
+                align-items: flex-end;
+                .col-wrap {
+                    @include column(50%);
+                    h1 {
+                        font-size: 78px;
+                        color: $white;
+                        line-height: 1.25;
+                        margin-bottom: 60px;
+                    }
+                    .text-box {
+                        background: rgba(0, 0, 0, 0.5);
+                        display: inline-block;
+                        text-align: left;
+                        max-width: 380px;
+                        padding: 25px;
+                        position: relative;
+                        top: 100px;
+                        &::before {
+                            content: '"';
+                            position: absolute;
+                            top: -37px;
+                            left: -20px;
+                            font-size: 120px;
+                            color: $white;
+                        }
+                        &::after {
+                            content: '"';
+                            position: absolute;
+                            bottom: -85px;
+                            right: -20px;
+                            font-size: 120px;
+                            color: $white;
+                        }
+                        p {
+                            color: $white;
+                        }
+                    }
+                    &:last-child {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

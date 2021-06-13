@@ -1,0 +1,25 @@
+.col-five-grid {
+    background: $smoke-white;
+    .title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .row-wrap {
+        @include row;
+        .col-wrap {
+            @include column(20%);
+            padding: 0 7px;
+            .img-wrap {
+                width: 100%;
+                margin-bottom: 10px;
+                img {
+                    width: 100%;
+                }
+            }
+            h5 {
+                font-family: $merriweather;
+                font-weight: bold;
+            }
+        }
+    }
+}

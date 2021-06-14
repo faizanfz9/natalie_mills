@@ -122,7 +122,7 @@ h1 {
   h6 {
     font-size: 18px;
     font-family: $roboto;
-    font-weight: 400;
+    font-weight: 500;
     color: $black;
     @include tablet-down {
       font-size: 16px;
@@ -130,7 +130,7 @@ h1 {
   }
   
   p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: $roboto;
     line-height: 1.6;
     color: $black;
@@ -175,6 +175,10 @@ h1 {
 
 .no-padding-top {
   padding-top: 0;
+}
+
+.bg-gray {
+  background: $smoke-white;
 }
 
 .intro-wrap {

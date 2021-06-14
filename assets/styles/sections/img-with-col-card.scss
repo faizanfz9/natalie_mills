@@ -1,0 +1,25 @@
+.img-with-col-card {
+    .row-wrap {
+        background: $white;
+        @include row;
+        align-items: center;
+        .col-left {
+            @include column(40%);
+            .img-wrap {
+                margin-top: -100px;
+            }
+        }
+        .col-right {
+            @include column(60%);
+            padding: 0 40px;
+            h2 {
+                margin: 30px 0 40px;
+                line-height: 1.4;
+            }
+            p {
+                margin-bottom: 30px;
+                color: $gray;
+            }
+        }
+    }
+}

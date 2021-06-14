@@ -1,0 +1,49 @@
+.footer {
+    background: $black;
+    .row-wrap {
+        @include row;
+        padding: 40px 0;
+        .col-info {
+            @include column(30%);
+            text-align: center;
+            padding: 0 10px;
+            p {
+                color: $white;
+                opacity: .65;
+                margin: 10px 0;
+            }
+            .social-links {
+                margin-top: 30px;
+                li {
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+            }
+        }
+        .col-links {
+            @include column(20%);
+            text-align: center;
+            .links-wrap {
+                display: inline-block;
+                text-align: left;
+                h6 {
+                    color: $white;
+                    margin-bottom: 20px;
+                }
+                .links {
+                    li {
+                        margin-bottom: 15px;
+                        a {
+                            color: $white;
+                            opacity: .65;
+                            font-size: 16px;
+                        }
+                    }
+                }   
+            }
+        }
+        .col-form {
+            @include column(30%);
+        }
+    }
+}

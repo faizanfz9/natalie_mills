@@ -49,13 +49,14 @@
   @extend %btn-common;
   background: $black;
   color: $white;
-  // &:hover {
-  //   background: $white;
-  //   color: $black;
-  //   &::after {
-  //     filter: invert(1);
-  //   }
-  // }
+  &::after {
+    display: none
+  }
+  &:hover {
+    background: none;
+    border-color: $black;
+    color: $black;
+  }
 }
 
 .btn.btn-border-white {

@@ -1,0 +1,28 @@
+.video-block {
+    .title {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 30px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            color: $gray;
+        }
+    }
+    .video-cover {
+        width: 100%;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+        }
+    }
+}

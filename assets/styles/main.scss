@@ -6,9 +6,11 @@
 /* Plugins */
 @import "plugins/animate";
 @import "plugins/slick";
+@import "plugins/modal-video.scss";
 
 /* Sections */
 @import "common/header";
+@import "common/footer";
 @import "sections/banner.scss";
 @import "sections/text-blade.scss";
 @import "sections/featured.scss";
@@ -16,6 +18,8 @@
 @import "sections/col-two-grid";
 @import "sections/col-with-img-card.scss";
 @import "sections/col-five-grid.scss";
-@import "common/footer";
+@import "sections/img-with-col-card.scss";
+@import "sections/video-block.scss";
+@import "sections/col-three-grid.scss";
 
 

@@ -1,0 +1,29 @@
+.payment-info {
+    padding: 30px 0;
+    .row-wrap {
+        @include row;
+        .col-left {
+            @include column(50%);
+            h5 {
+                margin-bottom: 20px;
+            }
+            .links {
+                columns: 3;
+                li {
+                    margin-bottom: 18px;
+                    a {
+                        font-size: 18px;
+                        color: $gray;
+                    }
+                }
+            }
+        }
+        .col-right {
+            @include column(50%);
+            text-align: right;
+            h5 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.banner-second-level {
+    padding: 20px 0;
+    .inner-wrap {
+        position: relative;
+        padding: 70px 40px;
+        .bg-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        h1 {
+            position: relative;
+            color: $white;
+            line-height: 1.3;
+        }
+    }
+}

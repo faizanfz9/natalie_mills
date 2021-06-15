@@ -2,7 +2,12 @@
     background: $black;
     .row-wrap {
         @include row;
+        border-bottom: 1px solid $white;
         padding: 40px 0;
+        h6 {
+            color: $white;
+            margin-bottom: 20px;
+        }
         .col-info {
             @include column(30%);
             text-align: center;
@@ -26,10 +31,6 @@
             .links-wrap {
                 display: inline-block;
                 text-align: left;
-                h6 {
-                    color: $white;
-                    margin-bottom: 20px;
-                }
                 .links {
                     li {
                         margin-bottom: 15px;
@@ -44,6 +45,35 @@
         }
         .col-form {
             @include column(30%);
+            text-align: right;
+            .form-wrap {
+                max-width: 270px;
+                margin-left: auto;
+                form {
+                    input {
+                        display: block;
+                        width: 100%;
+                        background: rgba(255, 255, 255, .2);
+                        color: $white;
+                        border: none;
+                        outline: none;
+                        padding: 12px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .sub-footer {
+        @include nowrap;
+        justify-content: space-between;
+        padding: 20px 0;
+        p {
+            color: rgba(255, 255, 255, .65);
+            span, a {
+                color: rgba(255, 255, 255, 1);
+                font-size: 16px;
+            }
         }
     }
 }

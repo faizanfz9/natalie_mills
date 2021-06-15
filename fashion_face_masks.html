@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css" integrity="sha512-H/zVLBHVS8ZRNSR8wrNZrGFpuHDyN6+p6uaADRefLS4yZYRxfF4049g1GhT+gDExFRB5Kf9jeGr8vueDsyBhhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript" src="assets/scripts/plugins/modal-video.min.js"></script>
-    <title>Natalie Mills</title>
+    <title>Fashion Face Masks</title>
 </head>
 <body>
     <header class="header">
@@ -93,91 +93,42 @@
         </div>
     </header>
 
-    <section class="banner">
-        <div class="bg-img">
-            <img src="./assets/images/banner.jpg" alt="banner">
+    <section class="banner-second-level bg-gray">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="bg-img">
+                    <img src="./assets/images/banner_second_level.png" alt="banner second level">
+                </div>
+                <h1>Fashion <br> Face Masks</h1>
+            </div>
         </div>
-        <div class="content-block">
+    </section>
+
+    <section class="product-grid bg-gray no-padding">
+        <div class="product-filter">
             <div class="container">
-                <div class="inner-wrap">
-                    <div class="col-wrap" *ngFor="let item of items">
-                        <h1>Lorem <br> Ipsum Dolor</h1>
-                        <a href="#" class="btn btn-white">Shop Now</a>
+                <div class="inner-row">
+                    <div class="change-view">
+                        <img src="./assets/images/list.png" alt="list">
+                        <span class="result">133 Results</span>
                     </div>
-                    <div class="col-wrap">
-                        <div class="text-box">
-                            <p>Thank You! For every item purchased together we donate to selected charaties through the Natalie Cares initiative.</p>
+                    <div class="sort">
+                        <span>Sort By:</span>
+                        <div class="dropdown">
+                            <div class="selector">
+                                <p>Newest to Oldest</p>
+                            </div>
+                            <ul class="menu">
+                                <li>Oldest to Newest</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="text-blade">
         <div class="container">
-            <h2>A kind act today can change the world in the most beautiful way</h2>
-        </div>
-    </section>
-
-    <section class="featured no-padding-bottom">
-        <div class="container">
-            <div class="title">
-                <h2>Shop Featured Collections</h2>
-            </div>
             <div class="row-wrap">
                 <div class="col-wrap">
-                    <div class="card-wrap">
-                        <img src="./assets/images/girl1.png" alt="girl 1">
-                        <div class="text-block">
-                            <h2>JESSIE BAGS</h2>
-                            <p>Our Gorgeous Jessie Bags are made with Austrain Crystal</p>
-                            <a href="#" class="btn btn-border-white">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-wrap">
-                    <div class="card-wrap">
-                        <img src="./assets/images/girl2.png" alt="girl 2">
-                        <div class="text-block">
-                            <h2>MULTI DESTINY</h2>
-                            <p>Our Gorgeous Jessie Bags are made with Austrain Crystal</p>
-                            <a href="#" class="btn btn-border-white">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-wrap">
-                    <div class="card-wrap">
-                        <img src="./assets/images/girl3.png" alt="girl 3">
-                        <div class="text-block">
-                            <h2>INFINITY COLLECTION</h2>
-                            <p>Our Gorgeous Jessie Bags are made with Austrain Crystal</p>
-                            <a href="#" class="btn btn-border-white">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-wrap">
-                    <div class="card-wrap">
-                        <img src="./assets/images/girl4.png" alt="girl 4">
-                        <div class="text-block">
-                            <h2>NATALIES ICONS</h2>
-                            <p>Our Gorgeous Jessie Bags are made with Austrain Crystal</p>
-                            <a href="#" class="btn btn-border-white">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="product-slider">
-        <div class="container">
-            <div class="title">
-                <h2>Top Trends</h2>
-                <a href="#" class="btn btn-border-black">View All</a>
-            </div>
-            <div class="slider-wrap">
-                <div class="slide-item">
                     <div class="product">
                         <div class="img-wrap">
                             <img class="main-img" src="./assets/images/mask1.png" alt="mask1">
@@ -210,7 +161,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="col-wrap">
                     <div class="product">
                         <div class="img-wrap">
                             <img class="main-img" src="./assets/images/mask2.png" alt="mask2">
@@ -243,7 +194,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="col-wrap">
                     <div class="product">
                         <div class="img-wrap">
                             <img class="main-img" src="./assets/images/mask1.png" alt="mask3">
@@ -276,10 +227,23 @@
                         </a>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="col-wrap">
+                    <div class="category">
+                        <a href="#">
+                            <img class="bg-img" src="./assets/images/glampers.png" alt="glampers">
+                            <div class="text-box">
+                                <div class="text-wrap">
+                                    <p>Shop</p>
+                                    <h2>Glampers Collection</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-wrap">
                     <div class="product">
                         <div class="img-wrap">
-                            <img class="main-img" src="./assets/images/mask2.png" alt="mask4">
+                            <img class="main-img" src="./assets/images/mask2.png" alt="mask2">
                             <img class="hover-img" src="./assets/images/girl_with_mask.png" alt="girl with mask">
                         </div>
                         <h5>Destiny Crystal Face Mask - Black</h5>
@@ -309,75 +273,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="col-two-grid">
-        <div class="container">
-            <div class="row-wrap">
                 <div class="col-wrap">
-                    <div class="img-wrap">
-                        <img src="./assets/images/combo1.png" alt="combo 1">
-                    </div>
-                    <h2>Natalie's Pick</h2>
-                    <p>Lorem Ipsum Dolor Sit</p>
-                </div>
-                <div class="col-wrap">
-                    <div class="img-wrap">
-                        <img src="./assets/images/combo2.png" alt="combo 2">
-                    </div>
-                    <h2>Lorem Ipsum</h2>
-                    <p>Consectetur Adipiscing</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="product-slider">
-        <div class="container">
-            <div class="title">
-                <h2>Whats New</h2>
-                <a href="#" class="btn btn-border-black">View All</a>
-            </div>
-            <div class="slider-wrap">
-                <div class="slide-item">
                     <div class="product">
                         <div class="img-wrap">
-                            <img class="main-img" src="./assets/images/01.png" alt="01">
-                            <img class="hover-img" src="./assets/images/girl_with_mask.png" alt="girl with mask">
-                        </div>
-                        <h5>Black Heather Heart Pendant</h5>
-                        <ul class="choices">
-                            <li>
-                                <img src="./assets/images/choice1.svg" alt="choice 1">
-                            </li>
-                            <li>
-                                <img src="./assets/images/choice2.png" alt="choice 2">
-                            </li>
-                            <li>
-                                <img src="./assets/images/choice3.png" alt="choice 3">
-                            </li>
-                            <li>
-                                <img src="./assets/images/choice4.png" alt="choice 4">
-                            </li>
-                            <li>
-                                <img src="./assets/images/choice5.png" alt="choice 5">
-                            </li>
-                        </ul>
-                        <div class="amount-row">
-                            <h3>$15.95 <span>$19.50</span></h3>
-                            <a href="#" class="add-to-bag">Add to bag</a>
-                        </div>
-                        <a href="#" class="fav-btn">
-                            <img src="./assets/images/favorite.svg" alt="favorite">
-                        </a>
-                    </div>
-                </div>
-                <div class="slide-item">
-                    <div class="product">
-                        <div class="img-wrap">
-                            <img class="main-img" src="./assets/images/02.png" alt="02">
+                            <img class="main-img" src="./assets/images/mask1.png" alt="mask3">
                             <img class="hover-img" src="./assets/images/girl_with_mask.png" alt="girl with mask">
                         </div>
                         <h5>Destiny Crystal Face Mask - Black</h5>
@@ -407,10 +306,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="col-wrap">
                     <div class="product">
                         <div class="img-wrap">
-                            <img class="main-img" src="./assets/images/03.png" alt="03">
+                            <img class="main-img" src="./assets/images/mask2.png" alt="mask2">
                             <img class="hover-img" src="./assets/images/girl_with_mask.png" alt="girl with mask">
                         </div>
                         <h5>Destiny Crystal Face Mask - Black</h5>
@@ -440,10 +339,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="col-wrap">
                     <div class="product">
                         <div class="img-wrap">
-                            <img class="main-img" src="./assets/images/03.png" alt="03">
+                            <img class="main-img" src="./assets/images/mask1.png" alt="mask3">
                             <img class="hover-img" src="./assets/images/girl_with_mask.png" alt="girl with mask">
                         </div>
                         <h5>Destiny Crystal Face Mask - Black</h5>
@@ -473,127 +372,117 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="col-with-img-card bg-gray">
-        <div class="container">
-            <div class="row-wrap">
-                <div class="col-left">
-                    <h2>Thank <br> You Mom</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nunc venenatis, blandit nunc non.</p>
-                    <a href="#" class="btn btn-black">Shop Gift</a>
-                </div>
-                <div class="col-right">
-                    <div class="img-wrap">
-                        <img src="./assets/images/gift.png" alt="gift">
+                <div class="col-wrap">
+                    <div class="product">
+                        <div class="img-wrap">
+                            <img class="main-img" src="./assets/images/mask2.png" alt="mask2">
+                            <img class="hover-img" src="./assets/images/girl_with_mask.png" alt="girl with mask">
+                        </div>
+                        <h5>Destiny Crystal Face Mask - Black</h5>
+                        <ul class="choices">
+                            <li>
+                                <img src="./assets/images/choice1.svg" alt="choice 1">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice2.png" alt="choice 2">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice3.png" alt="choice 3">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice4.png" alt="choice 4">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice5.png" alt="choice 5">
+                            </li>
+                        </ul>
+                        <div class="amount-row">
+                            <h3>$15.95 <span>$19.50</span></h3>
+                            <a href="#" class="add-to-bag">Add to bag</a>
+                        </div>
+                        <a href="#" class="fav-btn">
+                            <img src="./assets/images/favorite.svg" alt="favorite">
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="col-five-grid bg-gray no-padding-top">
-        <div class="container">
-            <div class="title">
-                <h2>Explore Our Glam</h2>
-            </div>
-            <div class="row-wrap">
                 <div class="col-wrap">
-                    <div class="img-wrap">
-                        <img src="./assets/images/new_arrivals.png" alt="new arrivals">
-                    </div>
-                    <h5>New Arrivals</h5>
-                </div>
-                <div class="col-wrap">
-                    <div class="img-wrap">
-                        <img src="./assets/images/earrings.png" alt="earrings">
-                    </div>
-                    <h5>Earrings</h5>
-                </div>
-                <div class="col-wrap">
-                    <div class="img-wrap">
-                        <img src="./assets/images/necklaces.png" alt="necklaces">
-                    </div>
-                    <h5>Necklaces</h5>
-                </div>
-                <div class="col-wrap">
-                    <div class="img-wrap">
-                        <img src="./assets/images/best_sellers.png" alt="Best Sellers">
-                    </div>
-                    <h5>Best Sellers</h5>
-                </div>
-                <div class="col-wrap">
-                    <div class="img-wrap">
-                        <img src="./assets/images/sale.png" alt="Sale">
-                    </div>
-                    <h5>Sale</h5>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="img-with-col-card bg-gray">
-        <div class="container">
-            <div class="row-wrap">
-                <div class="col-left">
-                    <div class="img-wrap">
-                        <img src="./assets/images/brand_ambassador.png" alt="brand ambassador">
+                    <div class="product">
+                        <div class="img-wrap">
+                            <img class="main-img" src="./assets/images/mask2.png" alt="mask2">
+                            <img class="hover-img" src="./assets/images/girl_with_mask.png" alt="girl with mask">
+                        </div>
+                        <h5>Destiny Crystal Face Mask - Black</h5>
+                        <ul class="choices">
+                            <li>
+                                <img src="./assets/images/choice1.svg" alt="choice 1">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice2.png" alt="choice 2">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice3.png" alt="choice 3">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice4.png" alt="choice 4">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice5.png" alt="choice 5">
+                            </li>
+                        </ul>
+                        <div class="amount-row">
+                            <h3>$15.95 <span>$19.50</span></h3>
+                            <a href="#" class="add-to-bag">Add to bag</a>
+                        </div>
+                        <a href="#" class="fav-btn">
+                            <img src="./assets/images/favorite.svg" alt="favorite">
+                        </a>
                     </div>
                 </div>
-                <div class="col-right">
-                    <img src="./assets/images/icon.png" alt="icon">
-                    <h2>Become Our <br> Brand Ambassador</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisl est, sodales non fermentum at.</p>
-                    <a href="#" class="btn btn-black">Become Ambassador</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="video-block bg-gray no-padding-top">
-        <div class="container">
-            <div class="title">
-                <h2>My Story</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius, arcu eget egestas malesuada, metus nulla sagittis nibh, sit amet ultricies dui risus tempus est.</p>
-            </div>
-            <a href="#" class="js-video-button" data-video-id='NILlCqOqyNI'>
-                <div class="video-cover">
-                    <img src="./assets/images/video_cover.png" alt="video cover">
-                    <img class="play-icon" src="./assets/images/play-button.svg" alt="play button">
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <section class="col-three-grid bg-gray no-padding-top">
-        <div class="container">
-            <div class="title">
-                <h2>Kind Act Campaign</h2>
-            </div>
-            <div class="row-wrap">
                 <div class="col-wrap">
-                    <img src="./assets/images/campaign1.png" alt="campaign1">
-                    <h6>Lorem Iposum</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat lorem ante, sed luctus nunc tempor vel. In vitae lec...</p>
-                    <a href="#">Read More >></a>
+                    <div class="product">
+                        <div class="img-wrap">
+                            <img class="main-img" src="./assets/images/mask1.png" alt="mask3">
+                            <img class="hover-img" src="./assets/images/girl_with_mask.png" alt="girl with mask">
+                        </div>
+                        <h5>Destiny Crystal Face Mask - Black</h5>
+                        <ul class="choices">
+                            <li>
+                                <img src="./assets/images/choice1.svg" alt="choice 1">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice2.png" alt="choice 2">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice3.png" alt="choice 3">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice4.png" alt="choice 4">
+                            </li>
+                            <li>
+                                <img src="./assets/images/choice5.png" alt="choice 5">
+                            </li>
+                        </ul>
+                        <div class="amount-row">
+                            <h3>$15.95 <span>$19.50</span></h3>
+                            <a href="#" class="add-to-bag">Add to bag</a>
+                        </div>
+                        <a href="#" class="fav-btn">
+                            <img src="./assets/images/favorite.svg" alt="favorite">
+                        </a>
+                    </div>
                 </div>
                 <div class="col-wrap">
-                    <img src="./assets/images/campaign2.png" alt="campaign2">
-                    <h6>Lorem Iposum</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat lorem ante, sed luctus nunc tempor vel. In vitae lec...</p>
-                    <a href="#">Read More >></a>
+                    <div class="category">
+                        <a href="#">
+                            <img class="bg-img" src="./assets/images/become_an_ambassador.png" alt="Ambassador">
+                            <div class="text-box">
+                                <div class="text-wrap">
+                                    <h2>Become an Ambassador</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-wrap">
-                    <img src="./assets/images/campaign3.png" alt="campaign1">
-                    <h6>Lorem Iposum</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat lorem ante, sed luctus nunc tempor vel. In vitae lec...</p>
-                    <a href="#">Read More >></a>
-                </div>
-            </div>
-            <div class="btn-wrap">
-                <a href="#" class="btn btn-border-black">View More</a>
             </div>
         </div>
     </section>
@@ -735,6 +624,63 @@
                             <img src="./assets/images/favorite.svg" alt="favorite">
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="col-with-img-card bg-gray">
+        <div class="container">
+            <div class="row-wrap">
+                <div class="col-left">
+                    <h2>Thank <br> You Mom</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nunc venenatis, blandit nunc non.</p>
+                    <a href="#" class="btn btn-black">Shop Gift</a>
+                </div>
+                <div class="col-right">
+                    <div class="img-wrap">
+                        <img src="./assets/images/gift.png" alt="gift">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="col-five-grid bg-gray no-padding-top">
+        <div class="container">
+            <div class="title">
+                <h2>Explore Our Glam</h2>
+            </div>
+            <div class="row-wrap">
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/new_arrivals.png" alt="new arrivals">
+                    </div>
+                    <h5>New Arrivals</h5>
+                </div>
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/earrings.png" alt="earrings">
+                    </div>
+                    <h5>Earrings</h5>
+                </div>
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/necklaces.png" alt="necklaces">
+                    </div>
+                    <h5>Necklaces</h5>
+                </div>
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/best_sellers.png" alt="Best Sellers">
+                    </div>
+                    <h5>Best Sellers</h5>
+                </div>
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/sale.png" alt="Sale">
+                    </div>
+                    <h5>Sale</h5>
                 </div>
             </div>
         </div>

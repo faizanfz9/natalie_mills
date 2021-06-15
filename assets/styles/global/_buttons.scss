@@ -25,6 +25,11 @@
     margin-left: 10px;
     transition: all .3s ease-in-out;
   }
+  &.no-arrow {
+    &::after {
+      display: none;
+    }
+  }
   @include tablet-down {
     font-size: 12px;
     padding: 8px 20px;
@@ -56,6 +61,20 @@
     background: none;
     border-color: $black;
     color: $black;
+  }
+}
+
+.btn.btn-green {
+  @extend %btn-common;
+  background: $green;
+  color: $white;
+  &::after {
+    display: none
+  }
+  &:hover {
+    background: none;
+    border-color: $green;
+    color: $green;
   }
 }
 

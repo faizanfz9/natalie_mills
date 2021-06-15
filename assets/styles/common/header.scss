@@ -5,6 +5,7 @@
             @include nowrap;
             justify-content: space-between;
             align-items: center;
+            padding: 8px 0;
             .links {
                 &.left {
                     li {
@@ -37,7 +38,7 @@
             }
             .logo-wrap {
                 img {
-                    width: 160px;
+                    width: 135px;
                 }
             }
          }

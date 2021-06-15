@@ -1,0 +1,248 @@
+.cart {
+    padding-top: 20px;
+    h5 {
+        margin-bottom: 20px;
+        span {
+            color: $gray;
+        }
+    }
+    .row-wrap {
+        @include row;
+        .col-left {
+            @include column(65%);
+            .card-wrap {
+                background: $white;
+                padding: 20px;
+                .inner-row {
+                    @include nowrap;
+                    justify-content: space-between;
+                    .col-info {
+                        .info-wrap {
+                            @include nowrap;
+                            .name {
+                                padding-left: 10px;
+                                h6 {
+                                    margin-bottom: 35px;
+                                }
+                                .qty-wrap {
+                                    @include nowrap;
+                                    align-items: center;
+                                    &>span {
+                                        font-size: 14px;
+                                        color: $gray;
+                                        display: inline-block;
+                                        margin-right: 10px;
+                                    }
+                                    .qty-box {
+                                        @include nowrap;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        border: 1px solid $black;
+                                        padding: 12px 10px;
+                                        width: 80px;
+                                        height: 25px;
+                                        button {
+                                            line-height: 0;
+                                            border: none;
+                                            outline: none;
+                                            cursor: pointer;
+                                            background: none;
+                                        }             
+                                        .qty {
+                                            font-weight: 500;
+                                            font-size: 12px;
+                                            line-height: 0;
+                                        }     
+                                    }
+                                }
+                            }
+        
+                        }
+                    }
+                    .col-price {
+                        h6 {
+                            margin-bottom: 35px;
+                        }
+                        a {
+                            text-decoration: underline;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .info {
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid rgba(0, 0, 0, .2);
+                    h6 {
+                        margin-bottom: 7px;
+                        a {
+                            font-size: 18px;
+                            color: $purple;
+                            text-decoration: underline;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                        color: $gray;
+                    }
+                }
+                .input-wrap {
+                    input, select {
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid rgba(0, 0, 0, .2);
+                        padding: 15px 15px 15px 0;
+                        font-size: 15px;
+                        color: $gray;
+                        width: 100%;
+                        &::placeholder {
+                            color: $gray;
+                        }
+                    }
+                }
+                .checkbox {
+                    margin-top: 7px;
+                    label {
+                        font-size: 12px;
+                        vertical-align: middle;
+                        margin-left: 5px;
+                    }
+                }
+                .newsletter {
+                    margin: 20px 0;
+                }
+                .form-wrap {
+                    columns: 2;
+                }
+                .detail-block {
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid rgba(0, 0, 0, .2);
+                    .detail {
+                        @include nowrap;
+                        justify-content: space-between;
+                        margin-bottom: 7px;
+                        p {
+                            color: $gray;
+                            span {
+                                color: $black;
+                                font-weight: 500;
+                                margin-left: 40px;
+                            }
+                        }
+                        a {
+                            color: $purple;
+                            text-decoration: underline;
+                        }
+                    }
+                    h6 {
+                        margin-bottom: 10px;
+                    }
+                    ul {
+                        li {
+                            display: inline-block;
+                            margin-right: 20px;
+                            .radio-wrap {
+                                @include nowrap;
+                                label {
+                                    color: $gray;
+                                    margin-left: 10px;
+                                    span {
+                                        font-size: 12px;
+                                        color: $black;
+                                    }
+                                }
+                                input {
+                                    margin-top: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-wrap {
+                    @include nowrap;
+                    justify-content: space-between;
+                    margin-top: 40px;
+                }
+            }
+        }
+        .col-right {
+            @include column(35%);
+            padding-left: 20px;
+            .card-wrap {
+                background: $white;
+                padding: 20px;
+                h5 {
+                    margin-bottom: 25px;
+                }
+                .amount-breakup {
+                    border-top: 1px solid rgba(0, 0, 0, .2);
+                    border-bottom: 1px solid rgba(0, 0, 0, .2);
+                    padding: 20px 0;
+                    .amount-row {
+                        @include nowrap;
+                        justify-content: space-between;
+                        margin-bottom: 15px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &.total {
+                            .title {
+                                color: $black;
+                            }
+                        }
+                        .title {
+                            color: $gray;
+                        }
+                    }
+                }
+                .checkout-btn {
+                    padding: 25px 0;
+                    border-bottom: 1px solid rgba(0, 0, 0, .2);
+                    button {
+                        width: 100%;
+                    }
+                }
+                .apply-promo {
+                    padding-top: 25px;
+                    h6 {
+                        margin-bottom: 20px;
+                    }
+                    .input-grp {
+                        @include nowrap;
+                        input {
+                            border: none;
+                            outline: none;
+                            border-bottom: 1px solid rgba(0, 0, 0, .2);
+                            padding: 11px;
+                            font-size: 16px;
+                            width: 100%;
+                        }
+                    }
+                }
+                .item {
+                    @include nowrap;
+                    margin-top: 20px;
+                    img {
+                        width: 42px;
+                        height: 42px;
+                        object-fit: cover;
+                        margin-right: 10px;
+                    }
+                    .info {
+                        .name {
+                            font-size: 14px;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: 14px;
+                            color: $gray;
+                            .value {
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -15,10 +15,24 @@
     $(this).slick({
       slidesToShow: 3,
       slidesToScroll: 1,
-      arrows: false
+      arrows: false,
+      dots: true
     })
   })
 
-  // $(".js-video-button").modalVideo();
+  // product img gallery
+  var thumbs = $(".product-detail .row-wrap .col-left .inner-wrap .thumbs li");
+  var mainImg = $(".product-detail .row-wrap .col-left .inner-wrap .main-img");
+
+  mainImg.eq(0).show();
+
+  thumbs.click(function(){
+    let index = $(this).index();
+
+    thumbs.removeClass("active");
+    $(this).addClass("active");
+    mainImg.hide();
+    mainImg.eq(index).fadeIn();
+  })
 
 })(jQuery);

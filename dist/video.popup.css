@@ -1,38 +1,3 @@
-/* Globals */
-@import "global/default";
-@import "global/variables";
-@import "global/buttons";
-
-/* Plugins */
-@import "plugins/animate";
-@import "plugins/slick";
-@import "plugins/modal-video.scss";
-
-/* Sections */
-@import "common/header";
-@import "common/footer";
-@import "sections/banner.scss";
-@import "sections/text-blade.scss";
-@import "sections/featured.scss";
-@import "sections/product-slider.scss";
-@import "sections/col-two-grid";
-@import "sections/col-with-img-card.scss";
-@import "sections/col-five-grid.scss";
-@import "sections/img-with-col-card.scss";
-@import "sections/video-block.scss";
-@import "sections/col-three-grid.scss";
-@import "sections/banner_second_level.scss";
-@import "sections/product-grid.scss";
-@import "sections/product-detail.scss";
-@import "sections/cart.scss";
-@import "sections/payment-info.scss";
-@import "sections/order-sucess-overlay.scss";
-@import "sections/my-account.scss";
-@import "sections/card-grid.scss";
-@import "sections/video-with-thumb.scss";
-@import "sections/blog-grid.scss";
-@import "sections/featured-blog.scss";
-
 /*
     GitHub URL: https://github.com/gucastiliao/video-popup-js
 */
@@ -157,5 +122,3 @@
         opacity: 0;
     }
 }
-
-

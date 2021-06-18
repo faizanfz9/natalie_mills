@@ -6,18 +6,7 @@
     <link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css" integrity="sha512-H/zVLBHVS8ZRNSR8wrNZrGFpuHDyN6+p6uaADRefLS4yZYRxfF4049g1GhT+gDExFRB5Kf9jeGr8vueDsyBhhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript" src="assets/scripts/plugins/modal-video.min.js"></script>
-    <title>Natalie Mills</title>
-
-    <style>
-        .pages ol li{
-            font-size: 18px;
-            margin: 20px 0;
-        }
-        .pages ol li a{
-            font-size: 18px;
-            text-decoration: underline;
-        }
-    </style>
+    <title>Celebrity Dressing</title>
 </head>
 <body>
     <header class="header">
@@ -40,19 +29,19 @@
                     <ul class="links right">
                         <li>
                             <a href="#">
-                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <img src="./assets/images/magnifying-glass.svg" alt="magnifying">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <img src="./assets/images/fav.svg" alt="fav">
                             </a>
                         </li>
                         <li>
-                            <a href="#">Account</a>
+                            <a href="#" >Account</a>
                         </li>
                         <li>
-                            <a href="my-cart.html">Cart <span class="total-items">0</span></a>
+                            <a href="my-cart.html" >Cart <span class="total-items">0</span></a>
                         </li>
                     </ul>
                 </div>
@@ -104,28 +93,139 @@
         </div>
     </header>
 
-    <section class="pages">
+    <section class="video-with-thumb bg-gray">
         <div class="container">
-            <ol>
-                <li>
-                    <a href="index.html" target="_blank">Index</a>
-                </li>
-                <li>
-                    <a href="fashion_face_masks.html" target="_blank">Fashion Face Masks</a>
-                </li>
-                <li>
-                    <a href="product-detail.html" target="_blank">Product Detail</a>
-                </li>
-                <li>
-                    <a href="my-cart.html" target="_blank">My Cart</a>
-                </li>
-                <li>
-                    <a href="shipping-details.html" target="_blank">Shipping Details</a>
-                </li>
-                <li>
-                    <a href="review.html" target="_blank">Review</a>
-                </li>
-            </ol>
+            <div class="title">
+                <h2>Natalie's Podcast</h2>
+            </div>
+            <div class="row-wrap">
+                <div class="col-left">
+                    <a class="video-link" video-url="https://www.youtube.com/watch?v=MzgaxdnNXf0">
+                        <div class="video-cover">
+                            <img src="./assets/images/jade-scarlato.png" alt="jade scarlato">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <h5>An action today can change the tomorrow</h5>
+                        <h6 class="date">by John Doe - 3 days ago</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisl est, sodales non fermentum at, auctor in urna. Nulla rhoncus ac elit sed tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent congue tristique nunc, at vehicula libero sollicitudin ac. In bibendum eget erat sed tincidunt. Duis gravida vitae lectus hendrerit ultrices. Aliquam id odio leo. Nulla commodo lacus justo, et pharetra enim scelerisque et. Cras suscipit commodo felis, non rhoncus orci auctor quis.</p>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="blog">
+                        <a href="#" class="video-link" video-url="https://www.youtube.com/watch?v=MzgaxdnNXf0">
+                            <div class="video-cover">
+                                <img src="./assets/images/podcast1.png" alt="podcast 1">
+                            </div>
+                        </a>
+                        <h5>Podcast Title #1</h5>
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="blog">
+                        <a href="#" class="video-link" video-url="https://www.youtube.com/watch?v=MzgaxdnNXf0">
+                            <div class="video-cover">
+                                <img src="./assets/images/podcast1.png" alt="podcast 1">
+                            </div>
+                        </a>
+                        <h5>Podcast Title #1</h5>
+                        <p>3 days ago</p>
+                    </div>
+                    <div class="blog">
+                        <a href="#" class="video-link" video-url="https://www.youtube.com/watch?v=MzgaxdnNXf0">
+                            <div class="video-cover">
+                                <img src="./assets/images/podcast1.png" alt="podcast 1">
+                            </div>
+                        </a>
+                        <h5>Podcast Title #1</h5>
+                        <p>3 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="blog-grid no-padding-top bg-gray">
+        <div class="container">
+            <div class="title">
+                <h2>You May Also Watch</h2>
+                <a href="#" class="btn btn-border-black">View All</a>
+            </div>
+            <div class="row-wrap">
+                <div class="col-wrap">
+                    <div class="blog">
+                        <a href="#" class="video-link" video-url="https://www.youtube.com/watch?v=MzgaxdnNXf0">
+                            <div class="video-cover">
+                                <img src="./assets/images/podcast1.png" alt="podcast 1">
+                            </div>
+                        </a>
+                        <h5>Podcast Title #1</h5>
+                        <p></p>
+                        <p class="date">3 days ago</p>
+                    </div>
+                </div>
+                <div class="col-wrap">
+                    <div class="blog">
+                        <a href="#" class="video-link" video-url="https://www.youtube.com/watch?v=MzgaxdnNXf0">
+                            <div class="video-cover">
+                                <img src="./assets/images/podcast2.png" alt="podcast 2">
+                            </div>
+                        </a>
+                        <h5>Podcast Title #1</h5>
+                        <p class="date">3 days ago</p>
+                    </div>
+                </div>
+                <div class="col-wrap">
+                    <div class="blog">
+                        <a href="#" class="video-link" video-url="https://www.youtube.com/watch?v=MzgaxdnNXf0">
+                            <div class="video-cover">
+                                <img src="./assets/images/podcast3.png" alt="podcast 3">
+                            </div>
+                        </a>
+                        <h5>Podcast Title #1</h5>
+                        <p class="date">3 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="col-five-grid bg-gray no-padding-top">
+        <div class="container">
+            <div class="title">
+                <h2>Explore Our Glam</h2>
+            </div>
+            <div class="row-wrap">
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/new_arrivals.png" alt="new arrivals">
+                    </div>
+                    <h5>New Arrivals</h5>
+                </div>
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/earrings.png" alt="earrings">
+                    </div>
+                    <h5>Earrings</h5>
+                </div>
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/necklaces.png" alt="necklaces">
+                    </div>
+                    <h5>Necklaces</h5>
+                </div>
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/best_sellers.png" alt="Best Sellers">
+                    </div>
+                    <h5>Best Sellers</h5>
+                </div>
+                <div class="col-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/images/sale.png" alt="Sale">
+                    </div>
+                    <h5>Sale</h5>
+                </div>
+            </div>
         </div>
     </section>
 

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css" integrity="sha512-H/zVLBHVS8ZRNSR8wrNZrGFpuHDyN6+p6uaADRefLS4yZYRxfF4049g1GhT+gDExFRB5Kf9jeGr8vueDsyBhhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript" src="assets/scripts/plugins/modal-video.min.js"></script>
-    <title>Review Order</title>
+    <title>Payment</title>
 </head>
 <body>
     <header class="header">
@@ -28,13 +28,13 @@
                     </div>
                     <ul class="links right">
                         <li>
-                            <a href="#">
-                                <img src="./assets/images/magnifying-glass.svg" alt="magnifying">
+                            <a href="#" >
+                                <i class="fa fa-search" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="./assets/images/fav.svg" alt="fav">
+                            <a href="#" >
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
@@ -95,7 +95,7 @@
 
    <section class="cart bg-gray">
        <div class="container">
-           <h5>Shipping Details > Review > <span> Payment</span></h5>
+           <h5>Shipping Details > Review > Payment</h5>
            <div class="row-wrap">
                <div class="col-left">
                     <div class="card-wrap">
@@ -109,29 +109,77 @@
                                 <p>Mobile Number: <span>+14845219676</span></p>
                                 <a href="#">Change</a>
                             </div>
-                        </div>
-                        <div class="detail-block">
-                            <h6>Ship To</h6>
                             <div class="detail">
-                                <p>Manish Mehta <br> 2, 20/2, Dunnellon, Florida, FL 34433, US <br> +1-484-521-9676</p>
+                                <p>Ship To: <span>Manish Mehta <br> 2, 20/2 Dunnellon, Florida, FL 34433, US <br> +1-484-521-9676</span></p>
+                                <a href="#">Change</a>
+                            </div>
+                            <div class="detail">
+                                <p>Shipping Method: <span>Free - Standard</span></p>
+                                <a href="#">Change</a>
                             </div>
                         </div>
-                        <div class="detail-block">
-                            <h6>Shipping Method</h6>
-                            <ul>
-                                <li>
-                                    <div class="radio-wrap">
-                                        <input type="radio" id="free" name="delivery" value="free">
-                                        <label for="free">Free - Standard Delivery <br> <span>No Charges</span></label>
-                                    </div> 
-                                </li>
-                                <li>
-                                    <div class="radio-wrap">
-                                        <input type="radio" id="quick" name="delivery" value="quick">
-                                        <label for="quick">Paid - Quick Delivery <br> <span>Charges - $2.00</span></label>
+                        <div class="payment-methods">
+                            <div class="method active">
+                                <div class="selector">
+                                    <p>Credit Card</p>
+                                </div>
+                                <div class="enter-details">
+                                    <div class="input-wrap">
+                                        <input type="number" placeholder="Credit Card Number">
                                     </div>
-                                </li>
-                            </ul>
+                                    <div class="input-wrap">
+                                        <select name="month" id="month">
+                                            <option value="selected">Month</option>
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <select name="year" id="year">
+                                            <option value="selected">Year</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                            <option value="2028">2028</option>
+                                            <option value="2029">2029</option>
+                                            <option value="2030">2030</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input type="number" placeholder="Security Code">
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input type="text" placeholder="Cardholder Name">
+                                    </div>
+                                    <p>Converse accepts all major credit and debit cards including Visa, Mastercard, American Express, and Discover.</p>
+                                    <img src="./assets/images/payment-options.png" alt="payment options">
+                                </div>
+                            </div>
+                            <div class="method">
+                                <div class="selector">
+                                    <p>Net Banking</p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <div class="selector">
+                                    <p>Cash on Delivery</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="btn-wrap">
                             <a href="#">< Back</a>

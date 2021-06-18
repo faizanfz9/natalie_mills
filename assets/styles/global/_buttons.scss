@@ -78,6 +78,20 @@
   }
 }
 
+.btn.btn-purple {
+  @extend %btn-common;
+  background: $purple;
+  color: $white;
+  &::after {
+    display: none
+  }
+  &:hover {
+    background: $black;
+    border-color: $black;
+    color: $white;
+  }
+}
+
 .btn.btn-border-white {
   @extend %btn-common;
   background: none;

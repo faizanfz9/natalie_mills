@@ -1,0 +1,46 @@
+.card-grid {
+    .grid-row {
+        @include row;
+        .grid-col {
+            @include column(50%);
+            padding: 0 15px;
+            margin-bottom: 20px;
+            .card-wrap {
+                @include nowrap;
+                img {
+                    width: 212px;
+                    object-fit: cover;
+                }
+                .content {
+                    background: $white;
+                    padding: 20px;
+                    h4 {
+                        font-family: $merriweather;
+                    }
+                    p {
+                        margin: 15px 0;
+                        color: $gray;
+                    }
+                    span {
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                    .product-view {
+                        margin-top: 10px;
+                        @include nowrap;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        img {
+                            width: 120px;
+                            border: 1px solid rgba(0, 0, 0, .07);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-wrap {
+        text-align: center;
+        margin-top: 30px;
+    }
+}

@@ -6,21 +6,13 @@
     <link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css" integrity="sha512-H/zVLBHVS8ZRNSR8wrNZrGFpuHDyN6+p6uaADRefLS4yZYRxfF4049g1GhT+gDExFRB5Kf9jeGr8vueDsyBhhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript" src="assets/scripts/plugins/modal-video.min.js"></script>
-    <title>Shipping Details</title>
+    <title>Add New Address</title>
 </head>
 <body>
     <header class="header">
         <div class="top-block">
             <div class="container">
                 <div class="inner-wrap">
-                    <ul class="links left">
-                        <li>
-                            Free Shipping
-                        </li>
-                        <li>
-                            <a href="#" >Download Our App</a>
-                        </li>
-                    </ul>
                     <div class="logo-wrap">
                         <a href="index.html">
                             <img src="./assets/images/logo.png" alt="logo">
@@ -28,13 +20,13 @@
                     </div>
                     <ul class="links right">
                         <li>
-                            <a href="#" >
-                                <i class="fa fa-search" aria-hidden="true"></i>
+                            <a href="#">
+                                <img src="./assets/images/magnifying-glass.svg" alt="magnifying">
                             </a>
                         </li>
                         <li>
-                            <a href="#" >
-                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <a href="#">
+                                <img src="./assets/images/fav.svg" alt="fav">
                             </a>
                         </li>
                         <li>
@@ -47,71 +39,35 @@
                 </div>
             </div>
         </div>
-        <div class="nav-block">
-            <div class="container">
-                <nav class="nav">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">New & Now</a>
-                        </li>
-                        <li>
-                            <a href="#">Jewellery</a>
-                        </li>
-                        <li>
-                            <a href="./fashion_face_masks.html">Fashion Face Masks</a>
-                        </li>
-                        <li>
-                            <a href="#">Accessories</a>
-                        </li>
-                        <li>
-                            <a href="#">Handbags</a>
-                        </li>
-                        <li>
-                            <a href="#">Footwear</a>
-                        </li>
-                        <li>
-                            <a href="#">SALE</a>
-                        </li>
-                        <li>
-                            <a href="#">Celebrity Dressing</a>
-                        </li>
-                        <li>
-                            <a href="#">Ambassardors</a>
-                        </li>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
     </header>
 
-   <section class="cart bg-gray">
-       <div class="container">
-           <h5>Shipping Details <span> > Review > Payment</span></h5>
-           <div class="row-wrap">
-               <div class="col-left">
-                    <div class="card-wrap">
-                        <div class="info">
-                            <h6><a href="#">Sign In</a> for faster checkout.</h6>
-                            <p>Don’t have an account? You’ll be able to create one after placing your order.</p>
-                        </div>
-                        <div class="newsletter">
-                            <div class="input-wrap">
-                                <input type="email" placeholder="Email Id">
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                <label for="vehicle1">Receive news and promotions via email and sms*</label>
-                            </div>
-                        </div>
+    <section class="my-account bg-gray">
+        <div class="container">
+            <div class="row-wrap">
+                <div class="col-menu">
+                    <ul class="menu">
+                        <li>Hi Manish</li>
+                        <li>
+                            <a href="#">My Account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">Manage Address</a>
+                        </li>
+                        <li>
+                            <a href="#">Change Password</a>
+                        </li>
+                        <li>
+                            <a href="#">My Orders</a>
+                        </li>
+                        <li>
+                            <a href="#">My Rewards</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-purple no-arrow">Become An Ambassador</a>
+                </div>
+                <div class="col-content">
+                    <h6>Add New Address</h6>
+                    <div class="content-card">
                         <div class="form-wrap">
                             <div class="input-wrap">
                                 <input type="text" placeholder="First Name">
@@ -156,50 +112,12 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="address" name="address">
-                            <label for="address">My Billing Address is same.</label>
-                        </div>
-                        <div class="btn-wrap">
-                            <a href="#">< Back to Cart</a>
-                            <a href="#" class="btn btn-black no-arrow">Proceed</a>
-                        </div>
-                    </div>
-               </div>
-               <div class="col-right">
-                    <div class="card-wrap">
-                        <h5>Payment Summary</h5>
-                        <div class="amount-breakup">
-                            <div class="amount-row">
-                                <h6 class="title">Sub Total</h6>
-                                <h6 class="price">$15.75</h6>
-                            </div>
-                            <div class="amount-row">
-                                <h6 class="title">Shipping Charges</h6>
-                                <h6 class="price">-</h6>
-                            </div>
-                            <div class="amount-row">
-                                <h6 class="title">Est. Taxes</h6>
-                                <h6 class="price">$2.25</h6>
-                            </div>
-                            <div class="amount-row total">
-                                <h6 class="title">Total</h6>
-                                <h6 class="price">$18.00</h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="./assets/images/destiny_black.png" alt="destiny black">
-                            <div class="info">
-                                <h6 class="name">Destiny Crystal Face Mask - Black</h6>
-                                <p>Qty: <span class="value">1</span></p>
-                                <p>Estimated Delivery: <br> <span class="value">3 May, 2021 - 5 May, 2021</span></p>
-                            </div>
-                         </div>
+                        <button type="submit" class="btn btn-black no-arrow mt-20">Save</button>
                     </div>
                 </div>
-           </div>
-       </div>
-   </section>
+            </div>
+        </div>
+    </section>
 
    <section class="payment-info">
        <div class="container">

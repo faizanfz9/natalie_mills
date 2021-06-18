@@ -35,4 +35,36 @@
     mainImg.eq(index).fadeIn();
   })
 
+  // payment method selector
+  var methods = $(".cart .row-wrap .col-left .card-wrap .payment-methods .method");
+  var enterDetailBox = $(".cart .row-wrap .col-left .card-wrap .payment-methods .method .enter-details")
+
+  methods.click(function(){
+    methods.removeClass("active");
+    $(this).addClass("active");
+
+    enterDetailBox.hide();
+    $(this).find(".enter-details").slideDown();
+  });
+
+  enterDetailBox.click(function(e){
+    e.stopPropagation();
+  })
+
+  // request overlay popup
+  var requestPopup = $(".return-overlay");
+  var showBtn = $(".request-return");
+  var closeBtn = requestPopup.find(".popup .header button");
+
+  showBtn.click(function(e){
+    e.preventDefault();
+    requestPopup.fadeIn();
+  });
+
+  closeBtn.click(function(){
+    requestPopup.fadeOut();
+  })
+
+  $(".video-link").videoPopup();
+
 })(jQuery);

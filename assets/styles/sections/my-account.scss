@@ -1,0 +1,375 @@
+.my-account {
+    .row-wrap {
+        @include row;
+        .col-menu {
+            @include column(25%);
+            .menu {
+                background: $white;
+                margin-bottom: 20px;
+                li {
+                    padding: 17px;
+                    border-bottom: 2px solid rgba(0, 0, 0, .05);
+                    a {
+                        font-size: 16px;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            color: $purple;
+                        }
+                        &.active {
+                            color: $purple;
+                        }
+                    }
+                }
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+        .col-content {
+            @include column(75%);
+            padding-left: 20px;
+            h6 {
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .title-with-btn  {
+                @include nowrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                h6 {
+                    margin-bottom: 0;
+                }
+            }
+            .content-card {
+                background: $white;
+                padding: 30px;
+                .profile-row {
+                    @include row;
+                    max-width: 700px;
+                    .img-col {
+                        @include column(20%);
+                        text-align: center;
+                        img {
+                            margin-bottom: 7px;
+                        }
+                        .btn {
+                            padding: 10px 17px;
+                            font-size: 12px;
+                        }
+                    }
+                    .form-col {
+                        @include column(80%);
+                        padding-left: 40px;
+                        .btn {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .address-row {
+                    @include row;
+                    align-items: flex-end;
+                    .info-col {
+                        @include column(80%);
+                        h6 {
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            color: $gray;
+                        }
+                    }
+                    .btn-col {
+                        @include column(20%);
+                        text-align: right;
+                        .edit-btn {
+                            border: none;
+                            vertical-align: middle;
+                            margin-right: 20px;
+                            cursor: pointer;
+                        }
+                        .btn {
+                            padding: 7px 20px;
+                        }
+                    }
+                }
+                .form-wrap {
+                    columns: 2;
+                }
+                .input-wrap {
+                    input, select {
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid rgba(0, 0, 0, .2);
+                        padding: 15px 15px 15px 0;
+                        font-size: 15px;
+                        color: $black;
+                        width: 100%;
+                        &::placeholder {
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .my-orders {
+        &>h6 {
+            color: $gray;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .order {
+            background: $white;
+            padding: 20px;
+            margin-bottom: 10px;
+            .inner-row {
+                @include nowrap;
+                justify-content: space-between;
+                .product {
+                    @include column(33.33%);
+                    img {
+                        vertical-align: bottom;
+                    }
+                    .info {
+                        display: inline-block;
+                        margin-left: 10px;
+                        h6 {
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            margin-top: 10px;
+                            color: $gray;
+                            span {
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+                .status {
+                    @include column(33.33%);
+                    .confirmed {
+                        background: $yellow;
+                        display: inline-block;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+                    .delivered {
+                        background: $purple;
+                        display: inline-block;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+                    .track-status {
+                        font-size: 12px;
+                        color: $gray;
+                    }
+                    .link-grp {
+                        margin-top: 30px;
+                        a {
+                            text-decoration: underline;
+                            font-size: 12px;
+                            &:first-child {
+                                color: $purple;
+                                margin-right: 25px;
+                            }
+                        }
+                    }
+                }
+                .price {
+                    @include column(33.33%);
+                    text-align: center;
+                }
+            }
+            .user-detail {
+                @include row;
+                padding-top: 20px;
+                margin-top: 20px;
+                border-top: 1px solid rgba(0, 0, 0, .2);
+                .col-wrap {
+                    @include column(40%);
+                    .row-wrap {
+                       margin-bottom: 5px;
+                    }
+                    &:last-child {
+                        @include column(60%);
+                        .col-wrap {
+                            &:first-child {
+                                text-align: right;
+                            }
+                            &:last-child {
+                                padding-left: 60px;
+                            }
+                        }
+                    }
+                    .input {
+                        font-weight: 500;
+                    }
+                }
+            }
+            .order-tracking {
+                text-align: center;
+                padding-top: 35px;
+                margin-top: 20px;
+                border-top: 2px solid rgba(0, 0, 0, .07);
+                ul {
+                    position: relative;
+                    display: inline-block;
+                    padding-top: 20px;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        left: 50%;
+                        width: calc(100% - 60px);
+                        height: 4px;
+                        background: $light-gray;
+                        border-radius: 10px;
+                        transform: translateX(-50%);
+                    }
+                    &.packed {
+                        &::before {
+                            background-image: linear-gradient(to right, $purple 37%, $light-gray 0%);
+                        }
+                    }
+                    &.shipped {
+                        &::before {
+                            background-image: linear-gradient(to right, $purple 64%, $light-gray 0%);
+                        }
+                    }
+                    &.delivered {
+                        &::before {
+                            background-image: linear-gradient(to right, $purple 100%, $light-gray 0%);
+                        }
+                    }
+                    li {
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0 80px;
+                        font-size: 14px;
+                        position: relative;
+                        span {
+                            font-size: 12px;
+                            color: $gray;
+                            display: inline-block;
+                            margin-top: 5px;
+                        }
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            top: -28px;
+                            left: 50%;
+                            width: 10px;
+                            height: 10px;
+                            background: $light-gray;
+                            border: 4px solid $purple;
+                            border-radius: 50%;
+                            transform: translateX(-50%);
+                        }
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.wishlist {
+        .my-orders {
+            &>h6 {
+                color: $black;
+                font-weight: 500;
+            }
+            .wishlist-product {
+                .inner-row {
+                    .product {
+                        @include column(70%);
+                        @include nowrap;
+                        .info {
+                            max-width: 450px;
+                            p {
+                                color: $black;
+                            }
+                        }
+                    }
+                    .price {
+                        @include column(30%);
+                        text-align: right;
+                        h6 {
+                            margin-bottom: 20px;
+                        }
+                        .action-btn {
+                            a {
+                                text-decoration: underline;
+                                font-weight: 500;
+                                margin-right: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.return-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 99;
+    @include nowrap;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    .popup {
+        max-width: 360px;
+        background: $white;
+        .header {
+            padding: 25px;
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+            @include nowrap;
+            justify-content: space-between;
+            button {
+                border: none;
+                outline: none;
+                background: none;
+                cursor: pointer;
+            }
+        }
+        .body {
+            padding: 25px;
+            text-align: center;
+            p {
+                color: $gray;
+                font-size: 18px;
+                span {
+                    color: $black;
+                }
+            }
+            .input-wrap {
+                margin: 30px 0;
+                input, select {
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, .2);
+                    padding: 15px 15px 15px 0;
+                    font-size: 15px;
+                    color: $gray;
+                    width: 100%;
+                    &::placeholder {
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.blog-grid {
+    .title {
+        @include nowrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .row-wrap {
+        @include row;
+        margin: 0 -10px;
+        .col-wrap {
+            @include column(33.33%);
+            padding: 0 10px;
+        }
+    }
+}

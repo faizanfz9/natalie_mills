@@ -1,0 +1,78 @@
+.video-with-thumb {
+    .title {
+        margin-bottom: 20px;
+    }
+    .row-wrap {
+        @include row;
+        .col-left {
+            @include column(75%);
+            .video-cover {
+                &::before {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .description {
+                margin-top: 20px;
+                h5 {
+                    margin-bottom: 10px;
+                }
+                .date {
+                    color: $gray;
+                }
+                p {
+                    margin-top: 20px;
+                    color: $gray;
+                }
+            }
+        }
+        .col-right {
+            @include column(25%);
+            padding-left: 20px;
+        }
+    }
+}
+
+.blog {
+    margin-bottom: 15px;
+    h5 {
+        margin: 10px 0 3px;
+        max-width: 320px;
+    }
+    p {
+        max-width: 320px;
+        margin: 10px 0;
+    }
+    .date {
+        color: $gray;
+        margin: 0;
+    }
+}
+
+.video-cover {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        background: url(../assets/images/play-button.svg);
+        background-size: 100%;
+        z-index: 1;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2)
+    }
+}

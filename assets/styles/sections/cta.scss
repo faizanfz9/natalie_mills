@@ -1,0 +1,36 @@
+.cta {
+    .row-wrap {
+        @include row;
+        align-items: center;
+        .col-content {
+            @include column(50%);
+            p {
+                font-size: 18px;
+                color: $gray;
+                margin: 30px 0;
+            }
+            h2 {
+                font-size: 44px;
+                line-height: 1.3;
+            }
+        }
+        .col-img {
+            @include column(50%);
+            position: relative;
+            padding-right: 60px;
+            padding-bottom: 20px;
+            img {
+                width: 100%;
+            }
+            .bg {
+                width: 190px;
+                height: 80%;
+                background: $purple;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
+}

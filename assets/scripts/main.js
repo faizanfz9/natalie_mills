@@ -65,6 +65,27 @@
     requestPopup.fadeOut();
   })
 
+  // video overlay popup
   $(".video-link").videoPopup();
+
+  // blog slider
+  var blogSlider = $(".blog-grid .slider-wrap");
+  
+  blogSlider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+  })
+
+  // initiative slider
+  var initiativeSlider = $(".initiative-slider .slider-wrap");
+
+  initiativeSlider.slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+  })
 
 })(jQuery);

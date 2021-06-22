@@ -1,0 +1,45 @@
+.initiative-slider {
+    .title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .slider-wrap {
+        .slick-dots {
+            text-align: center;
+            margin-top: 20px;
+            li {
+                display: inline-block;
+                margin: 0 5px;
+                button {
+                    font-size: 0;
+                    width: 15px;
+                    height: 15px;
+                    border: none;
+                    border-radius: 50%;
+                    background: $black;
+                    opacity: .4;
+                }
+                &.slick-active {
+                    button {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+        .slide-item {
+            // max-width: 548px;
+            padding: 0 10px;
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            p {
+                color: $gray;
+            }
+        }
+    }
+}

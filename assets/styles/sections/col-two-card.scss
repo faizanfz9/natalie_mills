@@ -1,0 +1,40 @@
+.col-two-card {
+    .title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .row-wrap {
+        @include row;
+        .col-wrap {
+            @include column(50%);
+            padding: 0 15px;
+            .inner-wrap {
+                @include nowrap;
+                align-items: center;
+                img {
+                    width: 267px;
+                    height: 267px;
+                    object-fit: cover;
+                }
+                .text-block {
+                    background: $white;
+                    padding: 30px 20px;
+                    .line {
+                        display: inline-block;
+                        width: 60%;
+                        height: 5px;
+                        background: $purple;
+                        transform: translateX(-20px);
+                        margin-bottom: 10px;
+                    }
+                    h5 {
+                        margin-bottom: 15px;
+                    }
+                    p {
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}

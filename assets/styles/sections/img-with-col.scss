@@ -1,0 +1,25 @@
+.img-with-col {
+    .row-wrap {
+        @include row;
+        align-items: center;
+        .col-img {
+            @include column(40%);
+            img {
+                width: 100%;
+            }
+        }
+        .col-content {
+            @include column(60%);
+            padding-left: 15px;
+            h2 {
+                margin-bottom: 30px;
+                font-size: 44px;
+            }
+            p {
+                color: $gray;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -3,13 +3,60 @@
         @include nowrap;
         justify-content: space-between;
         margin-bottom: 30px;
+        &.center {
+            justify-content: center;
+        }
     }
     .row-wrap {
         @include row;
         margin: 0 -10px;
+        .slick-dots {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+            li {
+                display: inline-block;
+                margin: 0 5px;
+                button {
+                    font-size: 0;
+                    width: 15px;
+                    height: 15px;
+                    border: none;
+                    border-radius: 50%;
+                    background: $black;
+                    opacity: .4;
+                }
+                &.slick-active {
+                    button {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
         .col-wrap {
             @include column(33.33%);
             padding: 0 10px;
+            margin-bottom: 20px;
+            .img-wrap {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                max-height: 50px;
+            }
+            a {
+                color: $purple;
+                font-size: 16px;
+            }
         }
+    }
+    .btn-wrap {
+        text-align: center;
     }
 }
